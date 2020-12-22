@@ -1,4 +1,4 @@
-FROM nginx:1.16.1-alpine
+FROM nginx:1.19.6-alpine
 RUN apk add inotify-tools certbot openssl
 COPY entrypoint.sh /opt/nginx-letsencrypt.sh
 COPY certbot.sh /opt/certbot.sh
